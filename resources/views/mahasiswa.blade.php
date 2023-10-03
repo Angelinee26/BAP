@@ -39,11 +39,11 @@ use App\Models\mahasiswa;
             ?>
                 @foreach ($mahasiswas as $mahasiswa)
                     <tr>
-                        <td>{{ $mahasiswa->id }}</td>
-                        <td>{{ $mahasiswa->studentID }}</td>
-                        <td>{{ $mahasiswa->name }}</td>
-                        <td>{{ $mahasiswa->jurusan }}</td>
-                        <td>{{ $mahasiswa->tahunMasuk }}</td>
+                        <td>{{ $mahasiswa->id}}</td>
+                        <td>{{ $mahasiswa->studentID}}</td>
+                        <td>{{ $mahasiswa->nama}}</td>
+                        <td>{{ $mahasiswa->jurusan}}</td>
+                        <td>{{ $mahasiswa->tahunMasuk}}</td>
                     </tr>
                 @endforeach
         </table>
