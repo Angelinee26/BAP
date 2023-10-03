@@ -1,4 +1,50 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        h1{
+            margin-bottom: 15px;
+            font-size: 35px;
+        }
+        a{
+            font-size: 15px;
+            text-decoration: underline;
+        }
+    </style>
+@section('title','Profile')
+@section('content')
+    <body class="antialiased">
+        <h1>Profil</h1>
+        <table class="table">
+            <tr>
+                <th scope="row">Nama</th>
+                <td>Angeline</td>
+            </tr>
+            <tr>
+                <th scope="row">Student ID</th>
+                <td>03081210003</td>
+            </tr>
+            <tr>
+                <th scope="row">Mata Kuliah</th>
+                <td>Pemrograman Aplikasi Bisnis</td>
+            </tr>
+            <tr>
+                <th scope="row">Prodi</th>
+                <td>Sistem Informasi</td>
+            </tr>
+        </table>
+    </body>
+@endsection
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -35,10 +81,24 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="text-center">
-            <h2>Selamat Datang di Website</h2>
-            <h1><b>ANGELINE</b></h1>
-            <a href="{{url('profile')}}">Lihat Profil</a>
-        </div>
+        <h1>Profil</h1>
+        <table class="table">
+            <tr>
+                <th scope="row">Nama</th>
+                <td>Angeline</td>
+            </tr>
+            <tr>
+                <th scope="row">Student ID</th>
+                <td>03081210003</td>
+            </tr>
+            <tr>
+                <th scope="row">Mata Kuliah</th>
+                <td>Pemrograman Aplikasi Bisnis</td>
+            </tr>
+            <tr>
+                <th scope="row">Prodi</th>
+                <td>Sistem Informasi</td>
+            </tr>
+        </table>
     </body>
-</html>
+</html> --}}

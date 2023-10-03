@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/index', function () {
     return view('index');
 });
+Route::get('/Welcome', function () {
+    return view('welcome');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/mahasiswa', [mahasiswaController::class, 'index']);
+//     return view('mahasiswa');
+// });
