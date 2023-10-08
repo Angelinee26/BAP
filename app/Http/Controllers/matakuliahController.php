@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\matakuliah;
 
 class matakuliahController extends Controller
 {
@@ -12,6 +13,8 @@ class matakuliahController extends Controller
     public function index()
     {
         //
+        $matakuliahs = matakuliah::where('id','>',90)->get();
+        return view('matakuliah')->with('matakuliahs',$matakuliahs);
     }
 
     /**
