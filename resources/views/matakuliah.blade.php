@@ -2,7 +2,7 @@
 use App\Models\matakuliah;
 ?>
 
-@extends('layouts.app')
+@extends('layouts.app2')
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@ use App\Models\matakuliah;
         }
     </style>
 
-@section('title','Profil')
+@section('title','Matakuliah')
 @section('content')
 
     <div class= "container">

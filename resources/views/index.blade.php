@@ -1,10 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('title','Home')
+@section('br1','Selamat Datang')
+@section('br2','Selamat Datang')
 @section('content')
-    <centre>
-        <h1>Selamat Datang Budi</h1>
-        <a href="Welcome">ke halaman welcome</a>
-    </centre>
+    <center>
+        <h3>Selamat Datang Budi<br>
+            di Website</h3>
+            <h1>Bambang</h1>
+        <a href="Welcome">ke Profil</a>
+    </center>
 
 @endsection
