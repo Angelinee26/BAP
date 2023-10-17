@@ -3,27 +3,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-        body{
-            font-family: 'Poppins', sans-serif;
+        th {
+            border: 1px solid;
+            text-align: center;
+            padding: 12px;
         }
-        h2{
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-        h1{
-            margin-bottom: 15px;
-            font-size: 35px;
-        }
-        a{
-            font-size: 15px;
-            text-decoration: underline;
+        td {
+            border: 1px solid;
+            text-align: center;
+            padding: 12px;
         }
     </style>
 @section('title','Profile')
 @section('content')
-    <body class="antialiased">
-        <h1>Profil</h1>
-        <table class="table">
+    <div class= "container">
+        <p style= "font-size: 48px ; font-weight: bold ; text-align: center ; margin: 40px 0 0 0 ; text-decoration: underline">Profile</p>     
+        <table style= "margin-right:auto;margin-left:auto">
             <tr>
                 <th scope="row">Nama</th>
                 <td>Angeline</td>
@@ -41,7 +36,7 @@
                 <td>Sistem Informasi</td>
             </tr>
         </table>
-    </body>
+    </div>
 @endsection
 
 {{-- <!DOCTYPE html>

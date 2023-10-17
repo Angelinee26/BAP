@@ -35,27 +35,51 @@
                with font-awesome or any other icon font library -->
             <li class="nav-item">
                 <a href="/" class="nav-link">
-                    <i class="nav-icon fas fa-file"></i>
+                    <i class="nav-icon fas fa-house-user"></i>
                     <p>Home</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/Welcome" class="nav-link">
-                    <i class="nav-icon fas fa-file"></i>
+                    <i class="nav-icon fas fa-paperclip"></i>
                     <p>Welcome</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/profile" class="nav-link">
-                    <i class="nav-icon fas fa-file"></i>
+                    <i class="nav-icon fas fa-user"></i>
                     <p>Profil</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="/mahasiswa" class="nav-link">
-                    <i class="nav-icon fas fa-user-secret"></i>
+                    <i class="nav-icon fas fa-graduation-cap"></i>
                     <p>Mahasiswa</p>
                 </a>
+            </li>
+            <li class="nav-item">
+              <a href="/matakuliah" class="nav-link">
+                  <i class="nav-icon fas fa-bell"></i>
+                  <p>Mata Kuliah</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/programstudi" class="nav-link">
+                  <i class="nav-icon fas fa-folder-open"></i>
+                  <p>Program Studi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/pembayaran" class="nav-link">
+                  <i class="nav-icon fas fa-credit-card"></i>
+                  <p>Pembayaran</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/jadwalkuliah" class="nav-link">
+                  <i class="nav-icon fas fa-calendar"></i>
+                  <p>Jadwal Perkuliahan</p>
+              </a>
             </li>
         </ul>
       </nav>

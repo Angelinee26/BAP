@@ -1,5 +1,5 @@
 <?php
-use App\Models\matakuliah;
+use App\Models\programstudi;
 ?>
 
 @extends('layouts.app2')
@@ -19,30 +19,28 @@ use App\Models\matakuliah;
         }
     </style> --}}
 
-@section('title','Mata Kuliah')
+@section('title','Program Studi')
 @section('content')
 
     <div class= "container">
-        <p style= "font-size: 48px ; font-weight: bold ; text-align: center ; margin: 40px 0 0 0 ; text-decoration: underline">MATA KULIAH</p>     
+        <p style= "font-size: 48px ; font-weight: bold ; text-align: center ; margin: 40px 0 0 0 ; text-decoration: underline">Program Studi</p>     
         {{-- <table style= "margin-top: 16px"> --}}
         <table id="example2" class="table table-bordered table-hover">
             <tr>
                 <th>ID</th>
-                <th>Kode Mata Kuliah</th>
-                <th>Mata Kuliah</th>
-                <th>SKS</th>
+                <th>Nama Program Studi</th>
+                <th>Deskripsi</th>
             </tr>
 
             <tr>
             <?php
-               $matakuliahs = matakuliah::all();
+               $programstudis = programstudi::all();
             ?>
-                @foreach ($matakuliahs as $matakuliah)
+                @foreach ($programstudis as $programstudi)
                     <tr>
-                        <td>{{$matakuliah->id}}</td>
-                        <td>{{$matakuliah->kodeMatakuliah}}</td>
-                        <td>{{$matakuliah->matakuliah}}</td>
-                        <td>{{$matakuliah->sks}}</td>
+                        <td>{{$programstudi->id}}</td>
+                        <td>{{$programstudi->nama}}</td>
+                        <td>{{$programstudi->deskripsi}}</td>
                     </tr>
                 @endforeach
         </table>
