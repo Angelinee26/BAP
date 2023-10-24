@@ -6,6 +6,8 @@ use App\Http\Controllers\matakuliahController;
 use App\Http\Controllers\programstudiController;
 use App\Http\Controllers\pembayaranController;
 use App\Http\Controllers\jadwalkuliahController;
+use App\Http\Controllers\Admin\ItemController;
+use App\Http\Controllers\Mahasiswa\Mahasiswa2Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +44,7 @@ Route::get('/pembayaran', [pembayaranController::class, 'index']);
 Route::get('/jadwalkuliah', [jadwalkuliahController::class, 'index']);
 //     return view('mahasiswa');
 // });
+
+Route::resource('/admin/item', ItemController::class);
+Route::resource('/mahasiswa/Mahasiswa2', Mahasiswa2Controller::class);
+// Route::resource('admin/item', 'App\Http\Controllers\Admin\ItemController');
