@@ -46,6 +46,6 @@ Route::get('/jadwalkuliah', [jadwalkuliahController::class, 'index']);
 //     return view('mahasiswa');
 // });
 Route::resource('/admin/item', ItemController::class);
-Route::resource('/mahasiswa/mahasiswa2', Mahasiswa2Controller::class);
+Route::resource('/mahasiswa/Mahasiswa2', Mahasiswa2Controller::class);
 // Route::resource('admin/item', 'App\Http\Controllers\Admin\ItemController');
-Route::resource('/matakuliah/matakuliah-angeline', MatakuliahAngelineController::class);
+Route::resource('/matakuliah/MatakuliahAngeline', MatakuliahAngelineController::class);
