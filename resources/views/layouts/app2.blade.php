@@ -31,7 +31,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{asset('AdminLTE/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60')}}">
+    <img class="animation__shake" src="{{ asset('AdminLTE/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -134,8 +134,3 @@
 <script src="{{asset('AdminLTE/dist/js/pages/dashboard.js')}}"></script>
 </body>
 </html>
-
-php artisan crud:generate Mahasiswa2 
---fields='studentID#string; nama#string; jurusan#text;
-tahunMasuk#string;' --view-path=admin --controller-namespace=App\\Http\\Controllers\\Admin --route-group=admin
- --form-helper=html

@@ -19,12 +19,12 @@ class MahasiswaSeeder extends Seeder
  
     	for($i = 1; $i <= 50; $i++){
  
-    	      // insert data ke table pegawai menggunakan Faker
-    		DB::table('mahasiswa2s')->insert([
-    			'studentID' => '03000811'&$i,
+    	    // insert data ke table pegawai menggunakan Faker
+    		\DB::table('mahasiswa2s')->insert([
+                'studentID' => '03000811'&$i,
     			'nama' => $faker->name,
+                'jurusan' => $faker->address,
     			'tahunMasuk' => '2021',
-    			'jurusan' => $faker->address
     		]);
         }
     }

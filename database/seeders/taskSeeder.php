@@ -18,7 +18,7 @@ class taskSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
         \DB::table('matakuliahs')->insert ([
             ['kodeMatakuliah'=>'MK001',
             'matakuliah'=>'Pemrograman Aplikasi Bisnis',
@@ -135,16 +135,16 @@ class taskSeeder extends Seeder
         ]
         );
 
-    	$faker = Faker::create('id_ID');
+        $faker = Faker::create('id_ID');
  
     	for($i = 1; $i <= 50; $i++){
  
-    	      // insert data ke table pegawai menggunakan Faker
-    		DB::table('mahasiswas')->insert([
-    			'studentID' => '03000811'&$i,
+    	    // insert data ke table pegawai menggunakan Faker
+    		\DB::table('mahasiswas')->insert([
+                'studentID' => '03000811'&$i,
     			'nama' => $faker->name,
+                'jurusan' => $faker->address,
     			'tahunMasuk' => '2021',
-    			'jurusan' => $faker->address
     		]);
         }
 

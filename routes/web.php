@@ -8,6 +8,7 @@ use App\Http\Controllers\pembayaranController;
 use App\Http\Controllers\jadwalkuliahController;
 use App\Http\Controllers\Admin\ItemController;
 use App\Http\Controllers\Mahasiswa\Mahasiswa2Controller;
+use App\Http\Controllers\Matakuliah\MatakuliahAngelineController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,7 @@ Route::get('/pembayaran', [pembayaranController::class, 'index']);
 Route::get('/jadwalkuliah', [jadwalkuliahController::class, 'index']);
 //     return view('mahasiswa');
 // });
-
-Route::resource('/admin/item', ItemController::class);
+Route::resource('/admin/Item', ItemController::class);
 Route::resource('/mahasiswa/Mahasiswa2', Mahasiswa2Controller::class);
 // Route::resource('admin/item', 'App\Http\Controllers\Admin\ItemController');
+Route::resource('/matakuliah/MatakuliahAngeline', MatakuliahAngelineController::class);
