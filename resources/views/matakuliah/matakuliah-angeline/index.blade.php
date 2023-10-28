@@ -8,11 +8,11 @@
                 <div class="card">
                     <div class="card-header">Mata Kuliah Angeline</div>
                     <div class="card-body">
-                        <a href="{{ url('/matakuliah/matakuliah-angeline/create') }}" class="btn btn-success btn-sm" title="Add New MatakuliahAngeline">
+                        <a href="{{ url('/matakuliah/MatakuliahAngeline/create') }}" class="btn btn-success btn-sm" title="Add New MatakuliahAngeline">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/matakuliah/matakuliah-angeline') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                        <form method="GET" action="{{ url('/matakuliah/MatakuliahAngeline') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
                                 <span class="input-group-append">
@@ -38,10 +38,10 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->kodeMatakuliah }}</td><td>{{ $item->matakuliah }}</td><td>{{ $item->sks }}</td>
                                         <td>
-                                            <a href="{{ url('/matakuliah/matakuliah-angeline/' . $item->id) }}" title="View MatakuliahAngeline"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/matakuliah/matakuliah-angeline/' . $item->id . '/edit') }}" title="Edit MatakuliahAngeline"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ url('/matakuliah/MatakuliahAngeline/' . $item->id) }}" title="View MatakuliahAngeline"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ url('/matakuliah/MatakuliahAngeline/' . $item->id . '/edit') }}" title="Edit MatakuliahAngeline"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                            <form method="POST" action="{{ url('/matakuliah/matakuliah-angeline' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/matakuliah/MatakuliahAngeline' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete MatakuliahAngeline" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>

@@ -9,8 +9,8 @@
                     <div class="card-header">Mahasiswa2 {{ $mahasiswa2->id }}</div>
                     <div class="card-body">
 
-                        <a href="{{ url('/mahasiswa/mahasiswa2') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-                        <a href="{{ url('/mahasiswa/mahasiswa2/' . $mahasiswa2->id . '/edit') }}" title="Edit Mahasiswa2"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                        <a href="{{ url('/mahasiswa/Mahasiswa2') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/mahasiswa/Mahasiswa2/' . $mahasiswa2->id . '/edit') }}" title="Edit Mahasiswa2"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                         <form method="POST" action="{{ url('mahasiswa/mahasiswa2' . '/' . $mahasiswa2->id) }}" accept-charset="UTF-8" style="display:inline">
                             {{ method_field('DELETE') }}

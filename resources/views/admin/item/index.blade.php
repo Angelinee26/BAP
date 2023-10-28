@@ -52,7 +52,7 @@
                                 </tbody>
                             </table>
                             <div class="pagination-wrapper"> 
-                                {{-- {!! $item->appends(['search' => Request::get('search')])->render() !!}  --}}
+                                {{-- {!! $item->appends(['search' => Request::get('search')])->render() !!} --}}
                             </div>
                         </div>
 
